@@ -1,0 +1,64 @@
+site_name: 國考藥理筆記
+site_description: 以 106–115 年醫師一階醫學（二）考古題整理的藥理學筆記
+site_author: Henry Cho
+copyright: Copyright &copy; 2026 Henry Cho｜題目來源：考選部考畢試題
+
+theme:
+  name: material
+  language: zh-TW
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: 切換深色模式
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切換淺色模式
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 首頁: index.md
+  - 藥理:
+      - pharm/index.md
+      - 自律神經藥理: pharm/ans.md
